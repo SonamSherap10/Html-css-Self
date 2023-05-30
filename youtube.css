@@ -1,0 +1,93 @@
+.video-grid p,img:hover{
+  cursor: pointer;
+}
+
+p{
+  font-family: Roboto, Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.body{
+  margin: 0;
+  background-color: rgb(247, 240, 240);
+  padding-top: 80px;
+  padding-left: 100px;
+  padding-right: 20px;
+}
+
+.thumbnail{
+  width: 100%;
+}
+
+.title{
+   margin-top: 0;
+  font-size:16px ;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+.vi-grid{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.pp{
+  width: 40px;
+  border-radius: 50px;
+}
+
+.thumbnail-row{
+  margin-bottom: 14px;
+ position: relative;
+}
+
+.video-time{
+position: absolute;
+background-color: rgba(6, 6, 6, 0.681);
+color: white;
+border-radius: 5px;
+padding-left: 4px;
+padding-top: 4px;
+padding-bottom: 4px;
+padding-right: 4px;
+font-family: roboto,arial;
+font-size: 12px;
+bottom: 12px;
+right: 10px;
+}
+
+.thumbnail{
+  border-radius: 15px;
+}
+ 
+.author,
+.stats{
+  font-size: 14px;
+  color: rgb(77, 76, 76);
+}
+
+.author{
+  margin-bottom: 4px;
+}
+
+.video-grid{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+flex-wrap: column;
+column-gap: 16px;
+row-gap: 40px ;
+}
+
+@media (max-width: 800px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr ;
+  }
+}
